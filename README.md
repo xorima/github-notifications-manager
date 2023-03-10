@@ -1,6 +1,7 @@
 # Github Notifications Manager
 
 A CLI tool to help clean up your Github notifications.
+It will delete thread subscriptions (so you will no longer be notified unless `@mentioned`)
 
 ## Installation
 
@@ -11,7 +12,6 @@ A CLI tool to help clean up your Github notifications.
 ## Usage
 
 Ensure `GITHUB_TOKEN` is set in your environment.
-
 
 ```bash
 github-notifications-manager run --help
