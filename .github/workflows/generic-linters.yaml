@@ -1,0 +1,26 @@
+---
+name: generic-linters
+
+"on":
+  push:
+    branches:
+      - main
+  pull_request:
+
+
+jobs:
+  yamllint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+      - name: Run yaml Lint
+        uses: actionshub/yamllint@main
+
+  mdl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+      - name: Run Markdown Lint
+        uses: actionshub/markdownlint@main
